@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: lh_monitoring_powerBI
+    # This 'database' must match your Lakehouse name exactly
+    database: lh_monitoring_powerBI 
+    schema: dbo
+    tables:
+      - name: stg_best_practice_analyzer
+        description: "Raw JSON data ingested from the best practice analyzer"
+
+      - name: stg_pbi1_activity
+        description: ""
+
+      - name: ref_pbi1_catalog_scan_datasources
+        description: ""
+
+      - name: ref_pbi1_catalog_scan_workspaces
+        description: ""
+
+      - name: ref_pbi1_catalog_snapshots
+        description: ""
+
+      - name: stg_pbi1_graph_groups
+        description: ""
+        
+      - name: stg_pbi1_graph_subscribedskus
+        description: ""
+        
+      - name: stg_pbi1_users
+        description: ""
+
+      - name: stg_pbi2_datasetrefresh_refreshes
+        description: ""
